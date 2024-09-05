@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --primary-color: #fe5b3e;
+  --text-dark: #0f172a;
+  --text-light: #475569;
+  --extra-light: #f2f2f2;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --gradient: linear-gradient(to bottom, #fe5c3c, #fc8023);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top-section {
+  padding-inline: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.top-section h1 {
+  color: var(--primary-color);
+  font-size: 30px;
+  padding-bottom: 1rem;
+}
+.postRentalBtn {
+  padding: 10px !important;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 40px;
+  border: 0.1px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: #fff;
+  color: var(--primary-color);
+}
+.car-container {
+  margin-block: 3rem;
+  padding-inline: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.car-card {
+  background-color: whitesmoke;
+  padding-inline: 1.5rem;
+  padding-block: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: space-between;
+  box-shadow: 2px 3px 10px rgba(128, 128, 128, 0.367);
+  position: relative;
+}
+
+.car-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  /* background: #fc8023; */
+}
+.car-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.car-card button {
+  /* margin: auto; */
+  width: 100px;
+  text-align: center;
+  background: #fe5c3c;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 15px 8px 15px;
+  border-radius: 5px;
+}
+
+.car-card .rating {
+  /* margin: auto; */
+  background: #fe5c3c4d;
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+  padding: 8px 15px 8px 15px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* margin-block: 0.5rem; */
+}
+
+/* Pagination */
+.pagination-controls {
+  text-align: center;
+  margin-block: 1.5rem;
+}
+
+.pagination-btn {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+/* Rent modal */
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-to-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.rent-form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+form input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+form input[type="number"]::-webkit-inner-spin-button,
+form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form button {
+  background: var(--gradient);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin: auto;
+  margin-block: 1rem;
+}
+
+form button:hover {
+  background-color: var(--primary-color);
+}
+
+form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* filter css */
+
+/* Filter icon styles */
+.filter-icon {
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  position: absolute; /* Adjust positioning as needed */
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+/* Off-canvas filter modal styles */
+.off-canvas-filter {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Initially hide off-canvas */
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.off-canvas-filter .filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.off-canvas-filter .close-filter {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* Show the filter modal */
+.off-canvas-filter.open {
+  right: 0;
+}
