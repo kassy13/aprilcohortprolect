@@ -497,6 +497,9 @@ nav {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* .counter__grid {
+    flex-wrap: wrap;
+  } */
 }
 
 @media (width > 768px) {
@@ -660,10 +663,8 @@ nav {
   }
 }
 /* Extra css added by me */
+
 /* for counter js */
-.counter__grid {
-  flex-wrap: wrap;
-}
 .section__header {
   text-align: center;
   font-size: 2rem;
@@ -713,6 +714,7 @@ nav {
   cursor: pointer;
   display: none;
   transition: opacity 0.3s ease-in-out;
+  z-index: 99999;
 }
 
 .scroll-to-top-btn:hover {
