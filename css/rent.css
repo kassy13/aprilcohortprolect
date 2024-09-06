@@ -15,7 +15,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.gen-container {
+  display: none;
+}
 .top-section {
   padding-inline: 4rem;
   display: flex;

@@ -1,0 +1,403 @@
+{
+    "cars": [
+      {
+        "id": 1,
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2021,
+        "type": "Sedan",
+        "rental_price_per_day": 45.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "New York, NY",
+        "features": ["Bluetooth", "GPS", "Automatic Transmission"],
+        "images": [
+          "https://img.freepik.com/free-photo/green-yellow-red-purple-violet-sedan-sport-cars-standing-dark-space_114579-1159.jpg?t=st=1725299478~exp=1725303078~hmac=35d3df97c5d1f48f69d7ab730b76e3943503af629baf8c631edf467264aad037&w=2000"
+        ],
+        "rating": 4.8
+      },
+      {
+        "id": 2,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2019,
+        "type": "Sedan",
+        "rental_price_per_day": 40.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Los Angeles, CA",
+        "features": ["Air Conditioning", "Backup Camera"],
+        "images": [
+          "https://img.freepik.com/premium-photo/group-cars-parked-front-wall_1308175-115188.jpg?w=1380"
+        ],
+        "rating": 4.6
+      },
+      {
+        "id": 3,
+        "make": "Ford",
+        "model": "Explorer",
+        "year": 2020,
+        "type": "SUV",
+        "rental_price_per_day": 60.0,
+        "currency": "USD",
+        "availability": false,
+        "location": "Chicago, IL",
+        "features": ["4-Wheel Drive", "Bluetooth", "GPS"],
+        "images": [
+          "https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg?t=st=1725298397~exp=1725301997~hmac=f4b73a42227a6099316124cc9c42e9b9bbf6a0d2b02c42642012c2d80d6a0690&w=2000"
+        ],
+        "rating": 4.7
+      },
+      {
+        "id": 4,
+        "make": "BMW",
+        "model": "X5",
+        "year": 2022,
+        "type": "SUV",
+        "rental_price_per_day": 100.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Miami, FL",
+        "features": ["Sunroof", "Leather Seats", "GPS"],
+        "images": [
+          "https://img.freepik.com/free-photo/view-3d-car_23-2150796894.jpg?t=st=1725299723~exp=1725303323~hmac=fd8c6da479cb718b2387e1d95a87099c2dbcb9c543e87ed491368619cdccb985&w=1380"
+        ],
+        "rating": 4.9
+      },
+      {
+        "id": 5,
+        "make": "Chevrolet",
+        "model": "Malibu",
+        "year": 2018,
+        "type": "Sedan",
+        "rental_price_per_day": 35.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Houston, TX",
+        "features": ["Bluetooth", "Automatic Transmission"],
+        "images": [
+          "https://img.freepik.com/premium-photo/black-mercedes-car-with-license-plate-that-says-g7_1277571-6878.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.5
+      },
+      {
+        "id": 6,
+        "make": "Mercedes-Benz",
+        "model": "C-Class",
+        "year": 2021,
+        "type": "Sedan",
+        "rental_price_per_day": 95.0,
+        "currency": "USD",
+        "availability": false,
+        "location": "Orlando, FL",
+        "features": ["Leather Seats", "Sunroof", "GPS"],
+        "images": [
+          "https://img.freepik.com/free-photo/yellow-car-gas-station_23-2150697544.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.9
+      },
+      {
+        "id": 7,
+        "make": "Tesla",
+        "model": "Model 3",
+        "year": 2022,
+        "type": "Electric",
+        "rental_price_per_day": 120.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "San Francisco, CA",
+        "features": ["Autopilot", "Electric", "GPS"],
+        "images": [
+          "https://img.freepik.com/free-photo/view-3d-car_23-2150796924.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.9
+      },
+      {
+        "id": 8,
+        "make": "Audi",
+        "model": "A6",
+        "year": 2020,
+        "type": "Sedan",
+        "rental_price_per_day": 85.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Las Vegas, NV",
+        "features": ["Bluetooth", "Leather Seats", "GPS"],
+        "images": [
+          "https://img.freepik.com/free-photo/modern-car-futuristic-road_23-2151021122.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.7
+      },
+      {
+        "id": 9,
+        "make": "Kia",
+        "model": "Sorento",
+        "year": 2019,
+        "type": "SUV",
+        "rental_price_per_day": 50.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Denver, CO",
+        "features": ["4-Wheel Drive", "GPS"],
+        "images": [
+          "https://img.freepik.com/free-photo/3d-car-with-minimal-background_23-2150797012.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.6
+      },
+      {
+        "id": 10,
+        "make": "Hyundai",
+        "model": "Sonata",
+        "year": 2019,
+        "type": "Sedan",
+        "rental_price_per_day": 40.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Phoenix, AZ",
+        "features": ["Air Conditioning", "Backup Camera"],
+        "images": [
+          "https://img.freepik.com/free-photo/view-3d-car_23-2150796980.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.5
+      },
+      {
+        "id": 11,
+        "make": "Mazda",
+        "model": "CX-5",
+        "year": 2021,
+        "type": "SUV",
+        "rental_price_per_day": 55.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Dallas, TX",
+        "features": ["Bluetooth", "GPS", "Automatic Transmission"],
+        "images": [
+          "https://img.freepik.com/free-photo/view-3d-police-car-with-lights_23-2150998642.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.8
+      },
+      {
+        "id": 12,
+        "make": "Nissan",
+        "model": "Altima",
+        "year": 2020,
+        "type": "Sedan",
+        "rental_price_per_day": 45.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "San Diego, CA",
+        "features": ["Bluetooth", "GPS"],
+        "images": [
+          "https://img.freepik.com/free-photo/white-sport-sedan-with-colorful-tuning-road_114579-5044.jpg?t=st=1725299993~exp=1725303593~hmac=e24b70a5ae0b80f88b398836f8cf9bad2751c106fecacf92c49186cd9c0e7316&w=2000"
+        ],
+        "rating": 4.7
+      },
+      {
+        "id": 13,
+        "make": "Jeep",
+        "model": "Wrangler",
+        "year": 2022,
+        "type": "SUV",
+        "rental_price_per_day": 95.0,
+        "currency": "USD",
+        "availability": false,
+        "location": "Salt Lake City, UT",
+        "features": ["4-Wheel Drive", "Convertible Top"],
+        "images": [
+          "https://img.freepik.com/premium-photo/mercedes-benz-is-shown-with-grey-background_1102161-2869.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.9
+      },
+      {
+        "id": 14,
+        "make": "Subaru",
+        "model": "Outback",
+        "year": 2019,
+        "type": "SUV",
+        "rental_price_per_day": 50.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Portland, OR",
+        "features": ["All-Wheel Drive", "Bluetooth"],
+        "images": [
+          "https://img.freepik.com/free-photo/3d-car-with-vibrant-colors_23-2150796926.jpg?uid=R22211209&ga=GA1.2.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.6
+      },
+      {
+        "id": 15,
+        "make": "Volkswagen",
+        "model": "Jetta",
+        "year": 2018,
+        "type": "Sedan",
+        "rental_price_per_day": 35.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Philadelphia, PA",
+        "features": ["Bluetooth", "Backup Camera"],
+        "images": [
+          "https://img.freepik.com/free-photo/sports-car-races-through-dark-blurred-motion-generative-ai_188544-12490.jpg?uid=R22211209&ga=GA1.2.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.5
+      },
+      {
+        "id": 16,
+        "make": "Lexus",
+        "model": "RX 350",
+        "year": 2020,
+        "type": "SUV",
+        "rental_price_per_day": 90.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Austin, TX",
+        "features": ["Leather Seats", "Sunroof", "GPS"],
+        "images": [
+          "https://img.freepik.com/free-photo/view-3d-car_23-2150797042.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.8
+      },
+      {
+        "id": 17,
+        "make": "Volvo",
+        "model": "XC90",
+        "year": 2021,
+        "type": "SUV",
+        "rental_price_per_day": 95.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Seattle, WA",
+        "features": ["Bluetooth", "GPS", "Backup Camera"],
+        "images": [
+          "https://img.freepik.com/free-photo/front-view-black-sedan-sport-car-bridge_114579-4068.jpg?uid=R22211209&ga=GA1.2.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.9
+      },
+      {
+        "id": 18,
+        "make": "Ford",
+        "model": "Mustang",
+        "year": 2019,
+        "type": "Convertible",
+        "rental_price_per_day": 85.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Miami, FL",
+        "features": ["Convertible Top", "Bluetooth"],
+        "images": [
+          "https://img.freepik.com/premium-photo/luxurious-chrome-gold-rollsroyce-convertible_334364-31264.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.8
+      },
+      {
+        "id": 19,
+        "make": "Chrysler",
+        "model": "300",
+        "year": 2018,
+        "type": "Sedan",
+        "rental_price_per_day": 45.0,
+        "currency": "USD",
+        "availability": false,
+        "location": "Las Vegas, NV",
+        "features": ["Leather Seats", "Bluetooth"],
+        "images": [
+          "https://img.freepik.com/free-photo/3d-car-with-minimal-background_23-2150796916.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.6
+      },
+      {
+        "id": 20,
+        "make": "Toyota",
+        "model": "RAV4",
+        "year": 2021,
+        "type": "SUV",
+        "rental_price_per_day": 55.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Orlando, FL",
+        "features": ["Bluetooth", "GPS", "Backup Camera"],
+        "images": [
+          "https://img.freepik.com/premium-photo/wolseley-hornet-sale-ford-retro-mustang-ferrari-f2004-wallpaper_1072870-51351.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.8
+      },
+      {
+        "id": 21,
+        "make": "Cadillac",
+        "model": "Escalade",
+        "year": 2022,
+        "type": "SUV",
+        "rental_price_per_day": 150.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "New York, NY",
+        "features": ["Sunroof", "Leather Seats", "GPS"],
+        "images": [
+          "https://img.freepik.com/free-photo/cyberpunk-urban-scenery-with-car_23-2150712268.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 5.0
+      },
+      {
+        "id": 22,
+        "make": "Jaguar",
+        "model": "F-Pace",
+        "year": 2021,
+        "type": "SUV",
+        "rental_price_per_day": 120.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Los Angeles, CA",
+        "features": ["Sunroof", "Bluetooth", "GPS"],
+        "images": ["https://img.freepik.com/free-photo/3d-car-with-vibrant-colors_23-2150796938.jpg?uid=R22211209&ga=GA1.2.86843024.1720551982&semt=ais_hybrid"],
+        "rating": 4.9
+      },
+      {
+        "id": 23,
+        "make": "Tesla",
+        "model": "Model S",
+        "year": 2021,
+        "type": "Electric",
+        "rental_price_per_day": 200.0,
+        "currency": "USD",
+        "availability": false,
+        "location": "San Francisco, CA",
+        "features": ["Autopilot", "Electric", "GPS"],
+        "images": [
+          "https://img.freepik.com/free-photo/3d-car-with-vibrant-colors_23-2150796906.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 5.0
+      },
+      {
+        "id": 24,
+        "make": "Chevrolet",
+        "model": "Suburban",
+        "year": 2020,
+        "type": "SUV",
+        "rental_price_per_day": 75.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Dallas, TX",
+        "features": ["4-Wheel Drive", "GPS"],
+        "images": [
+          "https://img.freepik.com/premium-photo/highly-detailed-photograph-2024-lamborghini-huracn-sto-lakers-gold-gloss-paint-with-le-ma_1097265-105856.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 4.8
+      },
+      {
+        "id": 25,
+        "make": "Porsche",
+        "model": "Cayenne",
+        "year": 2022,
+        "type": "SUV",
+        "rental_price_per_day": 250.0,
+        "currency": "USD",
+        "availability": true,
+        "location": "Miami, FL",
+        "features": ["Leather Seats", "GPS", "Bluetooth"],
+        "images": [
+          "https://img.freepik.com/premium-photo/white-bmw-car-with-license-plate-number-2_754951-15785.jpg?uid=R22211209&ga=GA1.1.86843024.1720551982&semt=ais_hybrid"
+        ],
+        "rating": 5.0
+      }
+    ]
+  }
+  
