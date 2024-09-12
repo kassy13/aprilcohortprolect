@@ -9,6 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/appwrite@15.0.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <title>Car Rentals</title>
   </head>
@@ -60,9 +64,67 @@
         </a>
       </section>
 
-      <section id="carContainer" class="car-container">
-       
-      </section>
+      <!-- filter off canvas -->
+      <div class="filter-icons">
+        <div class="currency-container">
+          <label for="currencySelect">Currency: </label>
+          <select id="currencySelect">
+            <option value="USD" selected>USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="NGN">NGN</option>
+          </select>
+        </div>
+        <div class="grouped-icons">
+          <div class="search-container">
+            <i class="ri-search-line" id="searchInput-icon"></i>
+            <input
+              type="text"
+              id="searchInput"
+              class="hidden"
+              placeholder="Search cars by make, model, location"
+            />
+          </div>
+          <div>
+            <i class="ri-filter-3-line" id="filter-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="off-canvas-filter" id="off-canvas-filter">
+        <div class="filter-header">
+          <span>Filter Cars</span>
+          <button class="close-filter" id="close-filter">&times;</button>
+        </div>
+        <form id="filterForm">
+          <label for="filterMake">Make:</label>
+          <input type="text" id="filterMake" name="make" />
+
+          <label for="filterModel">Model:</label>
+          <input type="text" id="filterModel" name="model" />
+
+          <label for="filterYear">Year:</label>
+          <input
+            type="number"
+            id="filterYear"
+            name="year"
+            min="1900"
+            max="2100"
+          />
+
+          <label for="filterPriceMin">Price Min:</label>
+          <input type="number" id="filterPriceMin" name="priceMin" min="0" />
+
+          <label for="filterPriceMax">Price Max:</label>
+          <input type="number" id="filterPriceMax" name="priceMax" min="0" />
+
+          <button type="submit">Apply Filters</button>
+          <button type="button" id="reset-filters-btn">Reset Filters</button>
+        </form>
+      </div>
+
+      <section id="carContainer" class="car-container"></section>
 
       <!-- Pagination controls -->
       <div id="paginationContainer" class="pagination-controls"></div>

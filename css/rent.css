@@ -15,9 +15,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-.gen-container {
-  display: none;
-}
+
 .top-section {
   padding-inline: 4rem;
   display: flex;
@@ -227,21 +225,23 @@ form button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
-/* filter css */
-
 /* Filter icon styles */
-.filter-icon {
+.filter-icons {
   cursor: pointer;
   padding: 1rem;
-  background-color: #333;
-  color: #fff;
   border-radius: 4px;
-  position: absolute; /* Adjust positioning as needed */
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-inline: 3rem;
 }
-
+.grouped-icons {
+  display: flex;
+  gap: 2rem;
+}
+.filter-icon i {
+  color: var(--primary-color);
+}
 /* Off-canvas filter modal styles */
 .off-canvas-filter {
   position: fixed;
@@ -273,4 +273,81 @@ form button:disabled {
 /* Show the filter modal */
 .off-canvas-filter.open {
   right: 0;
+}
+
+/* Car container styles */
+.car-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.car-card-img img {
+  max-width: 100%;
+}
+
+/* Pagination button styles */
+.pagination-btn {
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0.2rem;
+}
+
+.pagination-btn.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Search styles */
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: var(--primary-color); /* Change color on hover */
+}
+
+#searchInput {
+  width: 0;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+  transition: width 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  position: absolute;
+  right: 100%;
+  top: -5px;
+  z-index: -1;
+}
+
+#searchInput.active {
+  width: 300px;
+  opacity: 1;
+  z-index: 1;
+  right: calc(
+    100% + 10px
+  ); /* Adjusts the input to the left of the icon, with some spacing */
+}
+
+/* currency */
+.currency-container {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.currency-container select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  font-size: 1rem;
 }
